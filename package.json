@@ -1,15 +1,15 @@
 {
-  "name": "agnes",
+  "name": "samro.se-netlify",
   "version": "1.0.0",
-  "description": "Agnes Template",
-  "author": "Pasquale Vitiello <pasqualevitiello@gmail.com>",
+  "description": "samro.se-netlify continuous deployment",
+  "author": "Sam Rose <info@samro.se>",
   "license": "GPLv3",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/pasqualevitiello/agnes.git"
+    "url": "https://github.com/samsrose/samro.se-netlify.git"
   },
   "bugs": {
-    "url": "https://bitbucket.org/pasqualevitiello/agnes/issues"
+    "url": "https://github.com/samsrose/samro.se-netlify/issues"
   },
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
@@ -49,6 +49,6 @@
     "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
   },
-  "homepage": "https://bitbucket.org/pasqualevitiello/agnes#readme",
+  "homepage": "https://github.com/samsrose/samro.se-netlify#readme",
   "main": ".eslintrc.js"
 }
