@@ -1,54 +1,36 @@
 {
-  "name": "samro.se-netlify",
+  "name": "boilerplate-javascript",
   "version": "1.0.0",
-  "description": "samro.se-netlify continuous deployment",
-  "author": "Sam Rose <info@samro.se>",
-  "license": "GPLv3",
+  "description": "A boilerplate javascript project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/samsrose/samro.se-netlify.git"
+    "url": "git+https://github.com/contentful/boilerplate-javascript.git"
   },
+  "engines": {
+    "node": ">=4.7.2"
+  },
+  "keywords": [
+    "Contentful",
+    "boilerplate",
+    "Getting-Started"
+  ],
+  "author": "Khaled Garbaya <khaled@contentful.com>",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/samsrose/samro.se-netlify/issues"
+    "url": "https://github.com/contentful/boilerplate-javascript/issues"
   },
-  "scripts": {
-    "clean": "rimraf dist/{css/*,js/*,images/*}",
-    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
-    "scss": "node-sass --output-style compressed -o dist/css src/scss",
-    "lint": "eslint src/js || true",
-    "lint-scss": "stylelint src/scss/*.scss --syntax scss || true",
-    "uglify": "mkdirp dist/js -p && uglifyjs src/js/*.js -m -c -o dist/js/main.min.js",
-    "imagemin": "imagemin src/images/* -o dist/images",
-    "serve": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
-    "build:css": "run-s lint-scss scss autoprefixer",
-    "build:js": "run-s lint uglify",
-    "build:images": "run-s imagemin",
-    "build": "run-s build:*",
-    "watch:css": "onchange \"src/scss\" -- run-s build:css",
-    "watch:js": "onchange \"src/js\" -- run-s build:js",
-    "watch:images": "onchange \"src/images\" -- run-s build:images",
-    "watch": "run-p serve watch:*",
-    "postinstall": "run-s build watch"
+  "homepage": "https://github.com/contentful/boilerplate-javascript#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cli-table2": "^0.2.0",
+    "contentful": "^4.3.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.0.1",
-    "browser-sync": "^2.12.8",
-    "eslint": "^5.2.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "imagemin-cli": "^3.0.0",
-    "mkdirp": "^0.5.1",
-    "node-sass": "^4.9.2",
-    "npm-run-all": "^4.1.3",
-    "onchange": "^4.1.0",
-    "postcss-cli": "^6.0.0",
-    "rimraf": "^2.5.4",
-    "stylelint": "^9.4.0",
-    "uglify-es": "^3.3.10"
-  },
-  "homepage": "https://github.com/samsrose/samro.se-netlify#readme",
-  "main": ".eslintrc.js"
+    "nodemon": "^1.11.0"
+  }
 }
