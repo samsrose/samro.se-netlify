@@ -1,37 +1,31 @@
 {
-  "name": "boilerplate-javascript",
+  "name": "smrs-netlify-cms",
   "version": "1.0.0",
-  "description": "A boilerplate javascript project",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "echo 'build has been run'"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "npm run build && next export"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contentful/boilerplate-javascript.git"
+    "url": "git+https://github.com/samsrose/smrs-netlify-cms.git"
   },
-  "engines": {
-    "node": ">=4.7.2"
-  },
-  "keywords": [
-    "Contentful",
-    "boilerplate",
-    "Getting-Started"
-  ],
-  "author": "Khaled Garbaya <khaled@contentful.com>",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/contentful/boilerplate-javascript/issues"
+    "url": "https://github.com/samsrose/smrs-netlify-cms/issues"
   },
-  "homepage": "https://github.com/contentful/boilerplate-javascript#readme",
+  "homepage": "https://github.com/samsrose/smrs-netlify-cms#readme",
   "dependencies": {
-    "chalk": "^1.1.3",
-    "cli-table2": "^0.2.0",
-    "contentful": "^4.3.0"
+    "next": "^9.1.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "frontmatter-markdown-loader": "^3.1.0"
   }
 }
