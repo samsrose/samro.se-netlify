@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Musics
 date: 2019-11-16T10:31:20.591Z
 cats:
     - description: "Maru is a Scottish Fold from Japan, and he loves boxes."
@@ -9,7 +9,3 @@ cats:
     - description: "Grumpy cat is an American celebrity cat known for her grumpy appearance. "
       name: Grumpy cat (Tardar Sauce)
 ---
-
-Welcome to my awesome page about cats of the internet.
-
-This page is built with NextJS, and content is managed in Netlify CMS
