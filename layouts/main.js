@@ -4,7 +4,7 @@ import { Animated } from "react-animated-css";
 export default ({ children }) => (
   <div>
     <Head />
-    <Animated animationIn="fadeInLeft" animationOut="fadeOut" isvisible={true}>
+    <Animated animationIn="fadeIn" animationOut="fadeOut" isvisible={true}>
       {children}
     </Animated>
     <Foot />

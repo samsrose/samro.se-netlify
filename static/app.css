@@ -1608,6 +1608,11 @@ table td {
 	padding: 0.5em 1em 0.5em 1em;
 }
 
+@media all and (min-width: 520px) {
+	.rightTop {
+		background-position-x: -350px;
+	}
+}
 table th {
 	text-align: left;
 	padding: 0.5em 1em 0.5em 1em;

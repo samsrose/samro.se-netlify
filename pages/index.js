@@ -5,15 +5,20 @@ export default () => (
   <div>
     <Page>
       <section className="section">
-        <div className="innerSection">
+        <div className="leftTop">
           <h1>Sam Rose</h1>
-          <h4>Fullstack Engineer / Musician / Hacker</h4>
+        </div>
+        <div className="rightTop"></div>
+        <div className="leftBottom">
+          <h4>
+            Fullstack Web Engineer <br />
+            UX/UI Designer <br />
+            Musician
+          </h4>
+        </div>
+        <div className="bottomFull">
           <nav>
-            <span>About</span>
-            <span>Code</span>
-            <span>Music</span>
-            <span>Linkedin</span>
-            <span>Splice</span>
+            <span>Website coming soon...</span>
           </nav>
         </div>
       </section>

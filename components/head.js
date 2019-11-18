@@ -18,83 +18,96 @@ export default () => (
     </Head>
     <style jsx global>{`
       body {
-        background: #efefef;
-        font-family: "Source Sans Pro";
-        color: #fff;
-        margin: 0;
-        height: 100vh;
-        width: 100%;
-        user-select: none;
-      }
-      h1 {
-        font-size: 8em;
-        padding-top: 20px;
-        margin-top: 50px;
-        line-height: 0.25;
-        text-shadow: #0005 -1px 1px 2px;
-      }
-      div {
-        font-weight: 300;
-        padding-top: 20px;
-      }
-      span {
-        margin-right: 25px;
-        letter-spacing: 1.25px;
-        margin-top: 15px;
-      }
-
-      .innerSection {
-        height: 100%;
-        width: 50vw;
-        background-size: cover;
-        border-radius: 1px;
-      }
-      .innerSection h4 {
-        margin: 0;
-        font-size: 3em;
-        text-shadow: #0005 -1px 1px 2px;
-      }
-
-      nav {
-        width: 100%;
-        margin-top: 50px;
-      }
-      nav span {
-        color: #111;
-        padding: 8px 15px;
-        background: #fff;
-        box-shadow: #0009 -1px 1px 3px;
-        border-radius: 4px;
-        border: 1px solid #0001;
-        transition: 0.5s ease all;
-      }
-      nav span:nth-of-type(1),
-      nav span:nth-of-type(2),
-      nav span:nth-of-type(3) {
-        background: #fff2;
-        border-color: transparent;
-      }
-      nav span:nth-of-type(1):hover,
-      nav span:nth-of-type(2):hover,
-      nav span:nth-of-type(3):hover {
-        cursor: default;
-        opacity: 1;
-      }
-
-      nav span:hover {
-        cursor: pointer;
-        opacity: 0.75;
-      }
-      body {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: left;
         height: 100vh;
-        top: 0;
-        background-image: url(https://images.unsplash.com/photo-1565932887479-b18108f07ffd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+        color: #fff;
+        width: 100vw;
+        overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
+      }
+      .rightTop {
+        background-image: url(https://media0.giphy.com/media/l3vR0qrBQUyCO2sA8/giphy.gif?cid=790b761184cde77c9da931eb67c4b2319cef62439c4c090d&rid=giphy.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 50vw;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      .leftBottom {
+        height: 50vh;
+        width: 50vw;
+        background: #100a;
+        color: #fff;
+        position: fixed;
+        left: 0;
+        bottom: 25vh;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .leftTop h1 {
+        font-size: 4.5em;
+        line-height: 1;
+        margin-left: 50px;
+      }
+      .leftTop {
+        height: 25vh;
+        width: 50vw;
+        background: #fff;
+        color: #111;
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        justify-content: center;
+      }
+      .leftBottom h4 {
+        margin: 0;
+        margin-left: 50px;
+        font-size: 2em;
+        text-shadow: #0005 -1px 1px 2px;
+      }
+      .bottomFull {
+        background: #111;
+        width: 100vw;
+        height: 25vh;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+      }
+      .bottomFull nav {
+        width: 100%;
+      }
+      nav {
+        display: inline-flex;
+        flex-direction: column;
+        salign-items: center;
+        justify-content: center;
+      }
+      nav span {
+        color: #fff;
+        font-size: 1.25em;
+        text-align: center;
+        margin-top: 5vh;
+        border-radius: 2px;
+        transition: 0.5s ease all;
+      }
+
+      nav span:hover {
+        // cursor: pointer;
+        opacity: 0.75;
       }
     `}</style>
   </div>
