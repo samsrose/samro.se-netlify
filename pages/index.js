@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import content from "../content/home.md";
-import Head from "../components/head";
-import Footer from "../components/foot";
+// import Home from "../content/home.md";
 import Page from "../layouts/main";
-import { Animated } from "react-animated-css";
 export default () => (
   <div>
     <Page>
@@ -23,6 +20,7 @@ export default () => (
     </Page>
   </div>
 );
+
 // export default class Home extends Component {
 //   render() {
 //     let { html , attributes:{ title, cats } } = content;

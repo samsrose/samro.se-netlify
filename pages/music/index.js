@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import content from "../content/music.md";
+import content from "../../content/music.md";
 
 export default class Music extends Component {
   render() {

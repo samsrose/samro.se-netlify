@@ -1,5 +1,5 @@
 ---
-title: Musics
+title: Music
 date: 2019-11-16T10:31:20.591Z
 cats:
     - description: "Maru is a Scottish Fold from Japan, and he loves boxes."
