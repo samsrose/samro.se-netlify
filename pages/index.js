@@ -12,8 +12,7 @@ export default () => (
         <div className="leftBottom">
           <h4>
             Fullstack Web Engineer <br />
-            UX/UI Designer <br />
-            Musician
+            UX/UI Designer
           </h4>
         </div>
         <div className="bottomFull">
