@@ -11,7 +11,7 @@ html {
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: #000;
-  background: url(https://media2.giphy.com/media/YWKpvnOEgzprG/giphy.gif?cid=ecf05e473688450e1ee90f70a46e87e72733924f7308dbed&rid=giphy.gif);
+  background: url('site/bg.gif');
   background-size: cover;
   width: 100vw;
   height: 100vh;

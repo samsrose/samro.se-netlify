@@ -11,7 +11,7 @@ html {
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: #000;
-  background: url(./bg.gif);
+  background: url('./bg.gif');
   background-size: cover;
   width: 100vw;
   height: 100vh;
