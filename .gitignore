@@ -5,7 +5,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-/dev
+dev/
 # Icon must end with two \r
 Icon
 
